@@ -1,4 +1,5 @@
 # Metadata-Extraction-using-ExifTool-log2timeline-and-Hidden-Data-Search-using-Steganography-Tools
+# name: thenmozhi P(212223100059)
 ## AIM:
 To extract metadata, perform timeline analysis, and search for hidden data using forensic tools like ExifTool, log2timeline, and steganography detection tools.
 ## REQUIREMENTS
@@ -46,10 +47,12 @@ sudo apt install exiftool -y
 ```bash
 exiftool image.jpg
 ```
+<img width="1919" height="1078" alt="Screenshot 2025-09-24 153057" src="https://github.com/user-attachments/assets/3165549c-d348-460b-8d0d-50dea6353cc9" />
 - **Batch process a folder:**
 ```bash
 exiftool -r /path/to/folder
 ```
+<img width="1919" height="1078" alt="Screenshot 2025-09-24 153151" src="https://github.com/user-attachments/assets/5171597f-8581-46d7-950b-4fd5b87bc7e7" />
 - **Useful flags:**
   
 - ```-G: Show metadata group```
@@ -72,6 +75,9 @@ sudo apt install steghide -y
 ```
 steghide embed -cf /home/kali/Downloads/wallpaper.jpg -ef /home/kali/Downloads/secret.txt
 ```
+<img width="1919" height="1079" alt="Screenshot 2025-09-24 155714" src="https://github.com/user-attachments/assets/fcf78d77-92b5-467b-8ec2-29d104b489c7" />
+
+<img width="906" height="429" alt="Screenshot 2025-06-13 094702" src="https://github.com/user-attachments/assets/724da2bd-4b7b-4085-98c3-651b96723857" />
 
 
 - **Extract hidden data:**
@@ -79,7 +85,7 @@ steghide embed -cf /home/kali/Downloads/wallpaper.jpg -ef /home/kali/Downloads/s
 steghide extract -sf hidden.jpg
 
 ```
-
+<img width="673" height="267" alt="Screenshot 2025-06-13 094800" src="https://github.com/user-attachments/assets/2a685c2f-c6d4-43d9-b018-b7df22fd5799" />
 
 ### Using binwalk – for file analysis
 ```bash
@@ -89,6 +95,7 @@ binwalk suspicious.jpg
 ```bash
 binwalk /home/kali/Downloads/wallpaper.jpg
 ```
+![WhatsApp Image 2025-09-24 at 16 27 22_cd9ca7bf](https://github.com/user-attachments/assets/ee5182c1-9823-4cd5-9eea-bb94cbfa8649)
 
 
 ## RESULT:
